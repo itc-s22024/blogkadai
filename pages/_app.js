@@ -20,7 +20,6 @@ function MyApp({ Component, pageProps }) {
     }
   }, [router.events])
 
-  const getLayout = Component.getLayout || ((page) => page)
   return ( 
     <>
       <Script
@@ -41,7 +40,7 @@ function MyApp({ Component, pageProps }) {
         }}
       />
       <Layout>
-        {getLayout(<Component {...pageProps} />)}
+        <Component {...pageProps} />
       </Layout>
     </>
   )

@@ -1,4 +1,3 @@
-import BlueFrame from "components/blue-frame"
 import Meta from "components/meta"
 import Hero from "components/hero"
 import Container from "components/container"
@@ -7,14 +6,7 @@ import Contact from "components/contact"
 import { TwoColumn, TwoColumnMain, TwoColumnSidebar } from "components/two-column"
 import Accordion from "components/accordion"
 import Image from "next/image"
-// import eyecatch from "images/about.jpg"
-
-const eyecatch = {
-    src: 'https://images.microcms-assets.io/assets/ca83e792c77f456d83ca8a3e70c25305/6dcbbc700eb843178db9cdbeab1027b1/about.jpg',
-    height: 960,
-    width: 1920,
-    blurDataURL: 'data:image/jpeg;base64',
-}
+import eyecatch from "images/about.jpg"
 
 const About = () =>
     <Container>
@@ -83,7 +75,4 @@ const About = () =>
         </TwoColumn>
     </Container>
 
-About.getLayout = function getLayout(page) {
-    return <BlueFrame>{page}</BlueFrame>
-}
 export default About
